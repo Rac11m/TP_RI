@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>1118</width>
     <height>632</height>
    </rect>
   </property>
@@ -305,7 +305,7 @@ color: rgb(0, 0, 0);</string>
      </item>
     </layout>
    </widget>
-   <widget class="QFrame" name="horizontalFrame_2">
+   <widget class="QFrame" name="IndexFrame">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -326,7 +326,7 @@ color: rgb(0, 0, 0);</string>
       <enum>QLayout::SetDefaultConstraint</enum>
      </property>
      <item>
-      <widget class="QCheckBox" name="checkBox">
+      <widget class="QCheckBox" name="radio_index">
        <property name="text">
         <string/>
        </property>
@@ -386,6 +386,101 @@ color: rgb(0, 0, 0);</string>
     <property name="text">
      <string/>
     </property>
+   </widget>
+   <widget class="QLabel" name="labelQuery_5">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>100</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+      <underline>false</underline>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="text">
+     <string>Matching</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="matchingFrame">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>150</y>
+      <width>201</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+	background-color: rgb(227, 227, 227);
+	padding-left: 4px;
+	padding-right: 4px;
+}</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <property name="bottomMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <widget class="QCheckBox" name="radio_vsm">
+       <property name="text">
+        <string>Vector Space Model</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Preferred</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QComboBox" name="combo_vsm">
+       <item>
+        <property name="text">
+         <string>Scalar Product</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cosine Measure</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jaccard Measure</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
